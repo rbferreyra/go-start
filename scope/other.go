@@ -1,9 +1,9 @@
-package main
+package scope
 
 import "fmt"
 
 var z string = "Hello"
 
-func printZ() {
+func PrintZ() {
 	fmt.Println(z)
 }
