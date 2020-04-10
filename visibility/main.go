@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"scope"
+
+	scope "github.com/rbferreyra/go-start/scope"
 )
 
 func main() {
