@@ -2,6 +2,16 @@
 
 Aula básica sobre a linguaguem Go. Principais conceitos e fundamentos da linguagem.
 
+## Tabela de conteúdo
+
+* [Instalação](#instalação)
+    * [Instalar a linguagem Go](#1-instalar-a-linguagem-go)
+    * [Configurar o ambiente Go](#2-configurar-o-ambiente-go)
+    * [Atualizar a sessão atual do shell](#3-atualizar-a-sessão-atual-do-shell)
+    * [Verificar instalação](#4-verificar-instalação)
+
+
+
 ## Instalação
 
 ### 1. Instalar a linguagem Go
