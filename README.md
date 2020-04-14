@@ -9,8 +9,7 @@ Aula básica sobre a linguaguem Go. Principais conceitos e fundamentos da lingua
     * [Configurar o ambiente Go](#2-configurar-o-ambiente-go)
     * [Atualizar a sessão atual do shell](#3-atualizar-a-sessão-atual-do-shell)
     * [Verificar instalação](#4-verificar-instalação)
-
-
+* [Estrutura de pastas](#estrutura-de-pastas)
 
 ## Instalação
 
@@ -63,4 +62,47 @@ Para verificar a versão instalada:
 go version
 
 // go version go1.14.1 linux/amd64
+```
+
+## Estrutura de pastas
+
+Go requer o código em um espaço de trabalho. Um diretório, com três sub diretórios: src, pkg e bin. É recomendado que mantenhamos todos nosso projetos em um único espaço de trabalho. Assim, podem depender um dos outros e compartilhar pacotes de terceiros.
+
+1. O diretório `bin` contém vários comandos/ferramentas do Go e o depurador delve.
+
+2. O diretório `pkg` tem um subdiretório da plataforma que contem pacotes organizados por suas origens (github.com, golang.com, etc.).
+
+3. O diretório `src` tem subdiretórios similares para o repositório de origin ou site (github.com, golang.org, etc.).
+
+Eis nosso espaço de trabalho em Go atual.
+
+```bash
+tree -n -L 3
+
+├── bin
+│   ├── gocode
+│   ├── gocode-gomod
+│   ├── godef
+│   ├── golint
+│   ├── go-outline
+│   ├── gopkgs
+│   ├── goreturns
+│   └── hello
+├── pkg
+│   ├── linux_amd64
+│   │   ├── github.com
+│   │   └── scope.a
+│   ├── mod
+│   │   ├── 9fans.net
+│   │   ├── cache
+│   │   ├── github.com
+│   │   └── golang.org
+│   └── sumdb
+│       └── sum.golang.org
+└── src
+    └── github.com
+        ├── google
+        ├── gorilla
+        ├── rbferreyra
+        └── satori
 ```
